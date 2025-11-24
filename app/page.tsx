@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -32,7 +34,7 @@ export default function Home() {
           </nav>
 
           <a
-            href="https://wa.me/5491112345678?text=Hola%20Synergy%20Gym,%20quiero%20info%20sobre%20las%20clases%20de%20prueba."
+            href="https://wa.me/5491144296173?text=Hola%20Synergy%20Gym,%20quiero%20info%20sobre%20las%20clases%20de%20prueba."
             target="_blank"
             className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-emerald-500 md:text-sm"
           >
@@ -60,6 +62,11 @@ export default function Home() {
               Entrenamientos diseñados para que mejores tu rendimiento, cuides tu
               salud y te sientas parte de un equipo. Clases funcionales, musculación
               guiada y planes personalizados según tus objetivos.
+            </p>
+
+            <p className="max-w-xl text-sm leading-relaxed text-neutral-700 md:text-base">
+              Trato personalizado, entrenamientos enfocados en tus objetivos,
+              profesionalismo y calidez humana.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -169,6 +176,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DISCIPLINAS */}
+      <section className="border-b border-neutral-200 bg-neutral-50">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+          <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
+            Clases y disciplinas
+          </h2>
+          <p className="mt-2 text-sm text-neutral-600">
+            Además del entrenamiento en sala, podés sumarte a disciplinas específicas.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {/* Taekwondo */}
+            <article className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-neutral-200">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/images/taekwondo-infantiles.jpg"
+                  alt="Taekwondo en Synergy Gym"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="mt-4 text-sm text-neutral-700 space-y-1">
+                <p className="font-semibold text-neutral-900">Taekwondo</p>
+                <p>Infantiles, juveniles y adultos.</p>
+                <p>En Synergy Gym, Juan Bautista Alberdi 1865, Olivos.</p>
+              </div>
+            </article>
+
+            {/* Krav Maga */}
+            <article className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-neutral-200">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/images/krav-maga.jpg"
+                  alt="Clase de Krav Maga en Synergy Gym"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="mt-4 text-sm text-neutral-700 space-y-1">
+                <p className="font-semibold text-neutral-900">Krav Maga</p>
+                <p>Defensa personal israelí.</p>
+                <p>Martes y jueves, 17:00 hs. Juan Bautista Alberdi 1865, Olivos.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
       {/* PLANES */}
       <section id="planes" className="border-b border-neutral-200 bg-neutral-50">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
@@ -193,11 +249,32 @@ export default function Home() {
             Horarios
           </h2>
           <p className="mt-2 text-sm text-neutral-600">
-            Podés adaptar tu entrenamiento a tu rutina diaria.
+            Entrená en el horario que mejor se adapte a tu día.
           </p>
-          {/* Acá agregar horarios como tarjetas o lista */}
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 items-center">
+            {/* Texto */}
+            <div className="text-sm text-neutral-700 space-y-2">
+              <p><strong>Lunes a viernes:</strong> 8:00 a 21:00 hs</p>
+              <p><strong>Sábados:</strong> 8:00 a 20:00 hs</p>
+              <p><strong>Domingos:</strong> 10:00 a 14:00 hs</p>
+            </div>
+
+            {/* Imagen horarios */}
+            <div className="relative w-full max-w-md justify-self-center">
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl shadow-md">
+                <Image
+                  src="/images/horarios.jpeg"
+                  alt="Horarios de atención de Synergy Gym"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* EQUIPO */}
       <section id="equipo" className="border-b border-neutral-200 bg-neutral-50">
