@@ -44,7 +44,8 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="border-b border-neutral-200 bg-gradient-to-b from-white via-white to-emerald-50/40">
+      <section className="border-b border-neutral-200 bg-gradient-to-b from-white via-white to-emerald-50/30">
+
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 md:flex-row md:items-center md:py-16 lg:py-20">
           <div className="flex-1 space-y-6">
             <p className="text-xs font-medium tracking-[0.25em] text-emerald-700">
@@ -58,7 +59,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="max-w-xl text-sm leading-relaxed text-neutral-600 md:text-base">
+            <p className="max-w-xl text-sm leading-relaxed text-neutral-700 md:text-base">
               Entrenamientos diseñados para que mejores tu rendimiento, cuides tu
               salud y te sientas parte de un equipo. Clases funcionales, musculación
               guiada y planes personalizados según tus objetivos.
@@ -177,7 +178,8 @@ export default function Home() {
       </section>
 
       {/* DISCIPLINAS */}
-      <section className="border-b border-neutral-200 bg-neutral-50">
+      <section className="border-b border-neutral-200 bg-gradient-to-r from-neutral-50 via-white to-emerald-50/40">
+
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
           <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
             Clases y disciplinas
@@ -220,6 +222,50 @@ export default function Home() {
                 <p>Martes y jueves, 17:00 hs. Juan Bautista Alberdi 1865, Olivos.</p>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* MASAJES TERAPÉUTICOS */}
+      <section className="border-b border-neutral-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+          <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
+            Masajes terapéuticos y rehabilitación
+          </h2>
+          <p className="mt-2 text-sm text-neutral-600 max-w-md">
+            Atención personalizada para aliviar, recuperar y mejorar tu bienestar.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {/* Imagen */}
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/images/masajes.jpg"
+                alt="Masajes terapéuticos en Synergy Gym"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Texto */}
+            <div className="text-sm text-neutral-700 space-y-3 flex flex-col justify-center">
+              <p>Masajista – Kinesiólogo</p>
+              <ul className="list-disc pl-4 space-y-1">
+                <li>Masajes descontracturantes</li>
+                <li>Rehabilitación deportiva</li>
+                <li>Relajación profunda</li>
+              </ul>
+
+              <p className="text-lg font-semibold text-red-600">Precio: $30.000</p>
+
+              <a
+                href="https://wa.me/5491144296173?text=Quiero%20saber%20más%20sobre%20los%20masajes%20terapéuticos."
+                target="_blank"
+                className="inline-flex w-fit rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
+              >
+                Consultar por masajes
+              </a>
+            </div>
           </div>
         </div>
       </section>

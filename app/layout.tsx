@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${poppins.className} bg-neutral-50 text-neutral-900 antialiased`}
+        className={`${poppins.className} bg-gradient-to-b from-neutral-50 via-white to-neutral-100 text-neutral-900 antialiased`}
       >
         {children}
       </body>
