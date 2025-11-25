@@ -36,6 +36,7 @@ export default function Home() {
           <a
             href="https://wa.me/5491144296173?text=Hola%20Synergy%20Gym,%20quiero%20info%20sobre%20las%20clases%20de%20prueba."
             target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-emerald-500 md:text-sm"
           >
             Clase de prueba
@@ -45,7 +46,6 @@ export default function Home() {
 
       {/* HERO */}
       <section className="border-b border-neutral-200 bg-gradient-to-b from-white via-white to-emerald-50/30">
-
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 md:flex-row md:items-center md:py-16 lg:py-20">
           <div className="flex-1 space-y-6">
             <p className="text-xs font-medium tracking-[0.25em] text-emerald-700">
@@ -72,8 +72,9 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://wa.me/5491144296173?text=Hola,%20quiero%20agendar%20una%20clase%20de%20prueba%20en%20Synergy%20Gym."
+                href="https://wa.me/5491112345678?text=Hola,%20quiero%20agendar%20una%20clase%20de%20prueba%20en%20Synergy%20Gym."
                 target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
               >
                 Reservar clase de prueba
@@ -100,6 +101,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Tarjeta */}
           <div className="flex-1">
             <div className="relative mx-auto w-full max-w-md rounded-3xl bg-white p-5 shadow-lg shadow-emerald-100">
               <div className="space-y-4">
@@ -179,7 +181,6 @@ export default function Home() {
 
       {/* DISCIPLINAS */}
       <section className="border-b border-neutral-200 bg-gradient-to-r from-neutral-50 via-white to-emerald-50/40">
-
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
           <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
             Clases y disciplinas
@@ -226,7 +227,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MASAJES TERAPÉUTICOS */}
+      {/* MASAJES */}
       <section className="border-b border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
           <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
@@ -237,7 +238,6 @@ export default function Home() {
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {/* Imagen */}
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-sm">
               <Image
                 src="/images/masajes.jpg"
@@ -247,7 +247,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Texto */}
             <div className="text-sm text-neutral-700 space-y-3 flex flex-col justify-center">
               <p>Masajista – Kinesiólogo</p>
               <ul className="list-disc pl-4 space-y-1">
@@ -261,6 +260,7 @@ export default function Home() {
               <a
                 href="https://wa.me/5491144296173?text=Quiero%20saber%20más%20sobre%20los%20masajes%20terapéuticos."
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex w-fit rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
               >
                 Consultar por masajes
@@ -269,107 +269,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-      {/* PLANES */}
-      <section id="planes" className="border-b border-neutral-200 bg-neutral-50">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-          <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl text-center">
-            Planes y precios
-          </h2>
-
-          <p className="mt-2 text-sm text-neutral-600 text-center max-w-md mx-auto">
-            Elegí el plan que mejor se adapte a tu rutina.
-          </p>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {/* Plan 2 veces */}
-            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-100">
-              <h3 className="text-lg font-semibold text-neutral-900">
-                Plan 2 veces por semana
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                Ideal para empezar y crear el hábito.
-              </p>
-              <p className="mt-4 text-2xl font-semibold text-neutral-900">
-                $40.000
-                <span className="text-sm font-normal text-neutral-500"> / mes</span>
-              </p>
-              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
-                <li>• Acceso a sala de musculación.</li>
-                <li>• Clases funcionales (según disponibilidad).</li>
-                <li>• Rutina base incluida.</li>
-              </ul>
-              <a
-                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%202%20veces%20por%20semana"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 rounded-full border border-neutral-300 px-4 py-2 text-center text-sm font-semibold text-neutral-800 hover:border-emerald-500 hover:text-emerald-700"
-              >
-                Consultar este plan
-              </a>
-            </div>
-
-            {/* Plan 3 veces (destacado) */}
-            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-md ring-2 ring-emerald-100">
-              <p className="mb-2 inline-flex w-fit rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-emerald-700">
-                Recomendado
-              </p>
-              <h3 className="text-lg font-semibold text-neutral-900">
-                Plan 3 veces por semana
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                Balance ideal entre progreso y descanso.
-              </p>
-              <p className="mt-4 text-2xl font-semibold text-neutral-900">
-                $60.000
-                <span className="text-sm font-normal text-neutral-500"> / mes</span>
-              </p>
-              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
-                <li>• Acceso a musculación + funcional.</li>
-                <li>• Seguimiento de profes.</li>
-                <li>• Ajuste de rutina cada 4–6 semanas.</li>
-              </ul>
-              <a
-                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%203%20veces%20por%20semana"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 rounded-full bg-emerald-600 px-4 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
-              >
-                Elegir este plan
-              </a>
-            </div>
-
-            {/* Plan ilimitado */}
-            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-100">
-              <h3 className="text-lg font-semibold text-neutral-900">
-                Plan ilimitado
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                Para quienes quieren ir a fondo.
-              </p>
-              <p className="mt-4 text-2xl font-semibold text-neutral-900">
-                $70.000
-                <span className="text-sm font-normal text-neutral-500"> / mes</span>
-              </p>
-              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
-                <li>• Acceso libre dentro del horario del gym.</li>
-                <li>• Todas las clases funcionales.</li>
-                <li>• Acompañamiento cercano del equipo.</li>
-              </ul>
-              <a
-                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%20ilimitado"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 rounded-full border border-neutral-300 px-4 py-2 text-center text-sm font-semibold text-neutral-800 hover:border-emerald-500 hover:text-emerald-700"
-              >
-                Consultar este plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* HORARIOS */}
       <section id="horarios" className="border-b border-neutral-200 bg-white">
@@ -382,14 +281,12 @@ export default function Home() {
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 items-center">
-            {/* Texto */}
             <div className="text-sm text-neutral-700 space-y-2">
               <p><strong>Lunes a viernes:</strong> 8:00 a 21:00 hs</p>
               <p><strong>Sábados:</strong> 8:00 a 20:00 hs</p>
               <p><strong>Domingos:</strong> 10:00 a 14:00 hs</p>
             </div>
 
-            {/* Imagen horarios */}
             <div className="relative w-full max-w-md justify-self-center">
               <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl shadow-md">
                 <Image
@@ -403,21 +300,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-      {/* EQUIPO */}
-      <section id="equipo" className="border-b border-neutral-200 bg-neutral-50">
-        <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-          <h2 className="text-xl font-semibold text-neutral-900 md:text-2xl">
-            Nuestro equipo
-          </h2>
-          <p className="mt-2 text-sm text-neutral-600">
-            Profes que te acompañan en cada sesión.
-          </p>
-          {/* Agregar tarjetas con cada profe */}
-        </div>
-      </section>
-
 
       {/* CONTACTO */}
       <section id="contacto" className="bg-neutral-50">
@@ -440,8 +322,9 @@ export default function Home() {
                   <strong>Instagram:</strong>{" "}
                   <a
                     href="https://www.instagram.com/synergygym.arg/"
-                    className="text-emerald-700 underline-offset-2 hover:underline"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-700 underline-offset-2 hover:underline"
                   >
                     @synergygym.arg
                   </a>
@@ -455,6 +338,7 @@ export default function Home() {
               <a
                 href="https://wa.me/5491144296173?text=Hola,%20quiero%20más%20info%20sobre%20Synergy%20Gym."
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 inline-flex rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
               >
                 Escribir por WhatsApp
