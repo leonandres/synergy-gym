@@ -72,7 +72,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://wa.me/5491112345678?text=Hola,%20quiero%20agendar%20una%20clase%20de%20prueba%20en%20Synergy%20Gym."
+                href="https://wa.me/5491144296173?text=Hola,%20quiero%20agendar%20una%20clase%20de%20prueba%20en%20Synergy%20Gym."
                 target="_blank"
                 className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
               >
