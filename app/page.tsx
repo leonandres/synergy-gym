@@ -359,16 +359,94 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-neutral-200 bg-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-neutral-500 md:flex-row">
-          <p>© {new Date().getFullYear()} Synergy Gym. Todos los derechos reservados.</p>
+      <footer className="border-t border-neutral-200 bg-gradient-to-b from-white to-neutral-50">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          
+          {/* Grid superior */}
+          <div className="grid gap-10 md:grid-cols-4 text-sm">
+            
+            {/* Marca e identidad */}
+            <div className="md:col-span-2 space-y-3">
+              <p className="text-lg font-semibold text-neutral-900">Synergy Gym</p>
+              <p className="text-neutral-600 leading-relaxed max-w-sm">
+                Entrenamientos funcionales, musculación y disciplinas pensadas para 
+                mejorar tu fuerza, tu energía y tu bienestar general.
+              </p>
+            </div>
 
-          <p>
-            Sitio web desarrollado por{" "}
-            <span className="text-neutral-700">[Lucas Félix / Est. Ing. Informática]</span>
-          </p>
+            {/* Navegación */}
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">
+                Navegación
+              </p>
+              <ul className="mt-3 space-y-1 text-neutral-600">
+                <li><a href="#servicios" className="hover:text-emerald-700">Servicios</a></li>
+                <li><a href="#planes" className="hover:text-emerald-700">Planes y precios</a></li>
+                <li><a href="#horarios" className="hover:text-emerald-700">Horarios</a></li>
+                <li><a href="#contacto" className="hover:text-emerald-700">Contacto</a></li>
+              </ul>
+            </div>
+
+            {/* Contacto */}
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">
+                Contacto
+              </p>
+              <ul className="mt-3 space-y-1 text-neutral-600">
+                <li>
+                  WhatsApp:{" "}
+                  <a
+                    href="https://wa.me/5491144296173?text=Hola,%20quiero%20más%20info%20sobre%20Synergy%20Gym."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-700 hover:underline underline-offset-2"
+                  >
+                    +54 9 11 4429-6173
+                  </a>
+                </li>
+                <li>
+                  Instagram:{" "}
+                  <a
+                    href="https://www.instagram.com/synergygym.arg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-700 hover:underline underline-offset-2"
+                  >
+                    @synergygym.arg
+                  </a>
+                </li>
+                <li>
+                  FPU Juan Bautista Alberdi 1865<br />Olivos, Buenos Aires (B1636)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Línea divisoria */}
+          <div className="mt-10 border-t border-neutral-200 pt-6"></div>
+
+          {/* Pie inferior */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-neutral-500">
+            <p>© {new Date().getFullYear()} Synergy Gym — Todos los derechos reservados.</p>
+
+            <p className="flex items-center gap-2">
+              <span className="text-neutral-700 font-medium">Lucas Félix — Desarrollo Web</span>
+
+              {/* GitHub */}
+              <a
+                href="https://github.com/LucasFelix240"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full px-2.5 py-1 text-neutral-700 hover:text-white hover:bg-neutral-800 transition-colors"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+
         </div>
       </footer>
+
     </main>
   );
 }
