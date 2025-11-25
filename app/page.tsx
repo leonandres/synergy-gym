@@ -283,10 +283,93 @@ export default function Home() {
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            
+            {/* Plan 2 veces */}
+            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-100">
+              <h3 className="text-lg font-semibold text-neutral-900">
+                Plan 2 veces por semana
+              </h3>
+              <p className="mt-1 text-sm text-neutral-500">
+                Ideal para empezar y crear el hábito.
+              </p>
+              <p className="mt-4 text-2xl font-semibold text-neutral-900">
+                $40.000
+                <span className="text-sm font-normal text-neutral-500"> / mes</span>
+              </p>
+              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
+                <li>• Acceso a sala de musculación.</li>
+                <li>• Clases funcionales (según disponibilidad).</li>
+                <li>• Rutina base incluida.</li>
+              </ul>
+              <a
+                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%202%20veces%20por%20semana"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 rounded-full border border-neutral-300 px-4 py-2 text-center text-sm font-semibold text-neutral-800 hover:border-emerald-500 hover:text-emerald-700"
+              >
+                Consultar este plan
+              </a>
+            </div>
+
+            {/* Plan 3 veces (destacado) */}
+            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-md ring-2 ring-emerald-100">
+              <p className="mb-2 inline-flex w-fit rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-emerald-700">
+                Recomendado
+              </p>
+              <h3 className="text-lg font-semibold text-neutral-900">
+                Plan 3 veces por semana
+              </h3>
+              <p className="mt-1 text-sm text-neutral-500">
+                Balance ideal entre progreso y descanso.
+              </p>
+              <p className="mt-4 text-2xl font-semibold text-neutral-900">
+                $60.000
+                <span className="text-sm font-normal text-neutral-500"> / mes</span>
+              </p>
+              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
+                <li>• Acceso a musculación + funcional.</li>
+                <li>• Seguimiento de profes.</li>
+                <li>• Ajuste de rutina cada 4–6 semanas.</li>
+              </ul>
+              <a
+                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%203%20veces%20por%20semana"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 rounded-full bg-emerald-600 px-4 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-emerald-500"
+              >
+                Elegir este plan
+              </a>
+            </div>
+
+            {/* Plan ilimitado */}
+            <div className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-100">
+              <h3 className="text-lg font-semibold text-neutral-900">
+                Plan ilimitado
+              </h3>
+              <p className="mt-1 text-sm text-neutral-500">
+                Para quienes quieren ir a fondo.
+              </p>
+              <p className="mt-4 text-2xl font-semibold text-neutral-900">
+                $70.000
+                <span className="text-sm font-normal text-neutral-500"> / mes</span>
+              </p>
+              <ul className="mt-4 space-y-1 text-sm text-neutral-600">
+                <li>• Acceso libre dentro del horario del gym.</li>
+                <li>• Todas las clases funcionales.</li>
+                <li>• Acompañamiento cercano del equipo.</li>
+              </ul>
+              <a
+                href="https://wa.me/5491144296173?text=Quiero%20info%20sobre%20el%20plan%20ilimitado"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 rounded-full border border-neutral-300 px-4 py-2 text-center text-sm font-semibold text-neutral-800 hover:border-emerald-500 hover:text-emerald-700"
+              >
+                Consultar este plan
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* HORARIOS */}
       <section id="horarios" className="border-b border-neutral-200 bg-white">
